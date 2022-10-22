@@ -14,7 +14,7 @@ public class CourseJdbcRepository {
 
     private static final String INSERT_QUERY =
         "INSERT INTO COURSE (id, text, author) " +
-            "VALUES(?, ?, ?) ";
+        "VALUES(?, ?, ?) ";
 
     private static final String DELETE_QUERY =
             "DELETE FROM COURSE WHERE ID = ?";
