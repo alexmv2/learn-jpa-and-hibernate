@@ -42,5 +42,7 @@ public class CourseCommandLineRunner implements CommandLineRunner {
         System.out.println(repository.findById(2L));
         System.out.println(repository.findById(3L));
 
+        //test
+
     }
 }
