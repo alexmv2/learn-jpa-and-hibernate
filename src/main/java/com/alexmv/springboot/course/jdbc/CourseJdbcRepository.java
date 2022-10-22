@@ -13,20 +13,14 @@ public class CourseJdbcRepository {
     private JdbcTemplate jdbcTemplate;
 
     private static final String INSERT_QUERY =
-        """
-            INSERT INTO COURSE (id, text, author)
-            VALUES(?, ?, ?)
-        """;
+        "INSERT INTO COURSE (id, text, author) " +
+            "VALUES(?, ?, ?) ";
 
     private static final String DELETE_QUERY =
-        """
-            DELETE FROM COURSE WHERE ID = ?
-        """;
+            "DELETE FROM COURSE WHERE ID = ?";
 
     private static final String SELECT_QUERY =
-            """
-                SELECT * FROM COURSE WHERE ID = ?
-            """;
+                "SELECT * FROM COURSE WHERE ID = ?";
 
 
     public void insertCourse(Course course){
