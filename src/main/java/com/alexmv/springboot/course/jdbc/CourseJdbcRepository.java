@@ -38,6 +38,7 @@ public class CourseJdbcRepository {
     }
 
     public Course findCourseById(long id){
+        //commit jdbc
         return jdbcTemplate.queryForObject(SELECT_QUERY,
                 new BeanPropertyRowMapper<>(Course.class), id);
     }
