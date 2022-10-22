@@ -44,7 +44,6 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 
         //test
         //test2
-        //test3
 
     }
 }
