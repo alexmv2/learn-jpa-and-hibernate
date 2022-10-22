@@ -43,6 +43,8 @@ public class CourseCommandLineRunner implements CommandLineRunner {
         System.out.println(repository.findById(3L));
 
         //test
+        //test2
+        //test3
 
     }
 }
