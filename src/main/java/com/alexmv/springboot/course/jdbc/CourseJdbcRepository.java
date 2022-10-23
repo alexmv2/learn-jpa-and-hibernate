@@ -35,5 +35,6 @@ public class CourseJdbcRepository {
         return jdbcTemplate.queryForObject(SELECT_QUERY,
                 new BeanPropertyRowMapper<>(Course.class), id);
     }
+    
 
 }

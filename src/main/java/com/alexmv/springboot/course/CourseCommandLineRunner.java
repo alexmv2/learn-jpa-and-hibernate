@@ -1,11 +1,10 @@
 package com.alexmv.springboot.course;
 
-import com.alexmv.springboot.course.jdbc.CourseJdbcRepository;
-import com.alexmv.springboot.course.jpa.CourseJpaRepository;
-import com.alexmv.springboot.course.springjpadata.ICourseSpringJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import com.alexmv.springboot.course.springjpadata.ICourseSpringJpaRepository;
 
 @Component
 public class CourseCommandLineRunner implements CommandLineRunner {
@@ -22,8 +21,8 @@ public class CourseCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        // PARA JDBC Y JPA NORMAL
-        /*repository.insertCourse(new Course(1,"My first course", "Alex"));
+        /*// PARA JDBC Y JPA NORMAL
+        repository.insertCourse(new Course(1,"My first course", "Alex"));
         repository.insertCourse(new Course(2,"My second course", "Mengual"));
         repository.insertCourse(new Course(3,"My third course", "Vega"));
 
@@ -41,9 +40,11 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 
         System.out.println(repository.findById(2L));
         System.out.println(repository.findById(3L));
+        
+        System.out.println(repository.findByAuthor("Mengual"));
+        
+        System.out.println(repository.findByText("My third course"));
 
-        //test
-        //test2
 
     }
 }
